@@ -1,5 +1,5 @@
-import { defineRouting } from "next-intl/routing";
-import { LOCALES } from "./constant";
+import { defineRouting } from 'next-intl/routing';
+import { LOCALES } from './constant';
 
 export const routing = defineRouting({
   // A list of all locales that are supported
@@ -7,8 +7,8 @@ export const routing = defineRouting({
 
   // Used when no locale matches
 
-  localePrefix: "as-needed",
+  localePrefix: 'as-needed', // 기본 언어(ko)는 URL에 /ko 안 붙임
 
-  defaultLocale: "ko",
+  defaultLocale: 'ko',
   localeDetection: false,
 });

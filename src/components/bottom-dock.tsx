@@ -1,36 +1,36 @@
-"use client";
+'use client';
 
-import { AtSign, FileDown, FileUser, Home } from "lucide-react";
-import Link from "next/link";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { SimpleTooltip, TooltipProvider } from "@/components/ui/tooltip";
-import { Dock, DockIcon } from "./ui/dock";
+import { AtSign, FileDown, FileUser, Home } from 'lucide-react';
+import Link from 'next/link';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { SimpleTooltip, TooltipProvider } from '@/components/ui/tooltip';
+import { Dock, DockIcon } from './ui/dock';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from './ui/dropdown-menu';
 
 // TODO: replace with your own social links
 const DATA = {
   contact: {
     social: {
       GitHub: {
-        name: "GitHub",
-        url: "https://github.com/your-username",
+        name: 'GitHub',
+        url: 'https://github.com/hunderboy',
         icon: IoLogoGithub,
       },
       LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/your-profile/",
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/seonghun-lee-juno-910752206/',
         icon: IoLogoLinkedin,
       },
       email: {
-        name: "Send Email",
-        url: "mailto:you@example.com",
+        name: 'Send Email',
+        url: 'mailto:masury2011@gmail.com',
         icon: AtSign,
       },
     },
@@ -50,7 +50,7 @@ export function BottomDock() {
                 onClick={() => {
                   window.scrollTo({
                     top: 0,
-                    behavior: "smooth",
+                    behavior: 'smooth',
                   });
                 }}
               >
@@ -88,7 +88,7 @@ export function BottomDock() {
                     onClick={() => {
                       window.scrollTo({
                         top: 0,
-                        behavior: "smooth",
+                        behavior: 'smooth',
                       });
                     }}
                   >
@@ -99,14 +99,14 @@ export function BottomDock() {
               <DropdownMenuContent>
                 <DropdownMenuItem
                   onClick={() => {
-                    window.open("/resume/resume-ko.pdf", "_blank");
+                    window.open('/resume/resume-ko.pdf', '_blank');
                   }}
                 >
                   CV-KO <FileDown />
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   onClick={() => {
-                    window.open("/resume/resume-en.pdf", "_blank");
+                    window.open('/resume/resume-en.pdf', '_blank');
                   }}
                 >
                   CV-EN <FileDown />
