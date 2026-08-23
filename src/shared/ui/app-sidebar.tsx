@@ -1,0 +1,148 @@
+"use client";
+
+import dayjs from "dayjs";
+import {
+  Book,
+  BookOpen,
+  Briefcase,
+  FolderKanban,
+  History,
+  Newspaper,
+  Trophy,
+  Wrench,
+} from "lucide-react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
+import { useMajorSectionId } from "@/hooks/use-major-section-id";
+import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
+import { AuroraText } from "../../components/ui/aurora-text";
+
+export const NAV_ITEMS = [
+  { title: "Career", url: "#Career", icon: Briefcase },
+  { title: "Project", url: "#Project", icon: FolderKanban },
+  { title: "Activity", url: "#Activity", icon: Wrench },
+  { title: "Achievements", url: "#Achievements", icon: Trophy },
+  { title: "Experience", url: "#Experience", icon: History },
+] as const;
+
+export const NAV_ITEMS_ID = NAV_ITEMS.map((n) => n.url.replace(/^#/, ""));
+
+export const FIRST_NAV_ITEM_ID = NAV_ITEMS_ID[0];
+
+const lastUpdated = process.env.NEXT_PUBLIC_LAST_UPDATED;
+
+export function AppSidebar() {
+  const activeId = useMajorSectionId();
+  const t = useTranslations("footer");
+
+  return (
+    <Sidebar>
+      <SidebarHeader>
+        <div className="flex items-center gap-2 justify-evenly pt-2">
+          <Image
+            className="rounded-xl"
+            src="/images/intro/logo.jpeg"
+            alt="Your Name"
+            width={48}
+            height={48}
+          />
+          <div>
+            {/* TODO: replace with your name */}
+            <div className="px-2 text-xl font-semibold">Your Name</div>
+            <div className="px-2 text-xs font-semibold">Your Name (Korean)</div>
+          </div>
+        </div>
+      </SidebarHeader>
+      <SidebarContent>
+        <SidebarGroup>
+          <SidebarGroupLabel>Portfolio</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {NAV_ITEMS.map((item) => {
+                const isActive = activeId === item.url.slice(1);
+                return (
+                  <SidebarMenuItem
+                    key={item.title}
+                    className={cn(
+                      "transition-all duration-300 ease-out will-change-transform",
+                      isActive ? "translate-x-2" : "translate-x-0",
+                    )}
+                  >
+                    <SidebarMenuButton asChild>
+                      <Link href={item.url}>
+                        <item.icon
+                          className={cn(
+                            isActive && "text-primary font-semibold",
+                          )}
+                        />
+                        {isActive ? (
+                          <AuroraText>{item.title}</AuroraText>
+                        ) : (
+                          <span>{item.title}</span>
+                        )}
+                      </Link>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                );
+              })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <SidebarGroup>
+          <SidebarGroupLabel>Writing</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {/* TODO: replace with your own blog/book/article links */}
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link href="https://example.com/blog" target="_blank">
+                    <Book /> <span>Dev Blog</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link href="https://example.com/book" target="_blank">
+                    <BookOpen /> <span>Book</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link href="https://example.com/articles" target="_blank">
+                    <Newspaper /> <span>Articles</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      </SidebarContent>
+      <SidebarFooter>
+        <div className="text-xs text-muted-foreground">
+          {lastUpdated && (
+            <>
+              {t("lastUpdated")}: {dayjs(lastUpdated).format("YYYY.MM.DD")}
+              <br />
+            </>
+          )}
+          copyright © {new Date().getFullYear()} Your Name. <br />
+          All rights reserved.
+        </div>
+      </SidebarFooter>
+    </Sidebar>
+  );
+}
