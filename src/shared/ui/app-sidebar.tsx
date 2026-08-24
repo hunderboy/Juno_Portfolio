@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 import {
   Book,
   BookOpen,
@@ -10,9 +10,9 @@ import {
   Newspaper,
   Trophy,
   Wrench,
-} from "lucide-react";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+} from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import {
   Sidebar,
   SidebarContent,
@@ -24,21 +24,21 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar";
-import { useMajorSectionId } from "@/hooks/use-major-section-id";
-import { Link } from "@/i18n/navigation";
-import { cn } from "@/lib/utils";
-import { AuroraText } from "../../components/ui/aurora-text";
+} from '@/components/ui/sidebar';
+import { useMajorSectionId } from '@/hooks/use-major-section-id';
+import { Link } from '@/i18n/navigation';
+import { cn } from '@/lib/utils';
+import { AuroraText } from '../../components/ui/aurora-text';
 
 export const NAV_ITEMS = [
-  { title: "Career", url: "#Career", icon: Briefcase },
-  { title: "Project", url: "#Project", icon: FolderKanban },
-  { title: "Activity", url: "#Activity", icon: Wrench },
-  { title: "Achievements", url: "#Achievements", icon: Trophy },
-  { title: "Experience", url: "#Experience", icon: History },
+  { title: 'Career', url: '#Career', icon: Briefcase },
+  { title: 'Project', url: '#Project', icon: FolderKanban },
+  { title: 'Activity', url: '#Activity', icon: Wrench },
+  { title: 'Achievements', url: '#Achievements', icon: Trophy },
+  { title: 'Experience', url: '#Experience', icon: History },
 ] as const;
 
-export const NAV_ITEMS_ID = NAV_ITEMS.map((n) => n.url.replace(/^#/, ""));
+export const NAV_ITEMS_ID = NAV_ITEMS.map((n) => n.url.replace(/^#/, ''));
 
 export const FIRST_NAV_ITEM_ID = NAV_ITEMS_ID[0];
 
@@ -46,7 +46,7 @@ const lastUpdated = process.env.NEXT_PUBLIC_LAST_UPDATED;
 
 export function AppSidebar() {
   const activeId = useMajorSectionId();
-  const t = useTranslations("footer");
+  const t = useTranslations('footer');
 
   return (
     <Sidebar>
@@ -54,15 +54,15 @@ export function AppSidebar() {
         <div className="flex items-center gap-2 justify-evenly pt-2">
           <Image
             className="rounded-xl"
-            src="/images/intro/logo.jpeg"
+            src="/images/intro/logo.png"
             alt="Your Name"
             width={48}
             height={48}
           />
           <div>
             {/* TODO: replace with your name */}
-            <div className="px-2 text-xl font-semibold">Your Name</div>
-            <div className="px-2 text-xs font-semibold">Your Name (Korean)</div>
+            <div className="px-2 text-xl font-semibold">Juno Lee</div>
+            <div className="px-2 text-xs font-semibold">Lee Seong Hun</div>
           </div>
         </div>
       </SidebarHeader>
@@ -77,15 +77,15 @@ export function AppSidebar() {
                   <SidebarMenuItem
                     key={item.title}
                     className={cn(
-                      "transition-all duration-300 ease-out will-change-transform",
-                      isActive ? "translate-x-2" : "translate-x-0",
+                      'transition-all duration-300 ease-out will-change-transform',
+                      isActive ? 'translate-x-2' : 'translate-x-0',
                     )}
                   >
                     <SidebarMenuButton asChild>
                       <Link href={item.url}>
                         <item.icon
                           className={cn(
-                            isActive && "text-primary font-semibold",
+                            isActive && 'text-primary font-semibold',
                           )}
                         />
                         {isActive ? (
@@ -108,22 +108,11 @@ export function AppSidebar() {
               {/* TODO: replace with your own blog/book/article links */}
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <Link href="https://example.com/blog" target="_blank">
+                  <Link
+                    href="https://hunderboy-ultra90.tistory.com/"
+                    target="_blank"
+                  >
                     <Book /> <span>Dev Blog</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href="https://example.com/book" target="_blank">
-                    <BookOpen /> <span>Book</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href="https://example.com/articles" target="_blank">
-                    <Newspaper /> <span>Articles</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -135,11 +124,11 @@ export function AppSidebar() {
         <div className="text-xs text-muted-foreground">
           {lastUpdated && (
             <>
-              {t("lastUpdated")}: {dayjs(lastUpdated).format("YYYY.MM.DD")}
+              {t('lastUpdated')}: {dayjs(lastUpdated).format('YYYY.MM.DD')}
               <br />
             </>
           )}
-          copyright © {new Date().getFullYear()} Your Name. <br />
+          copyright © {new Date().getFullYear()} Juno <br />
           All rights reserved.
         </div>
       </SidebarFooter>
