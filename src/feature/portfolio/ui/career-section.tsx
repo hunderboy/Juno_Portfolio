@@ -1,13 +1,13 @@
-"use client";
-import { LinkIcon } from "lucide-react";
-import { motion } from "motion/react";
-import Image from "next/image";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import CompanyDetailInfoDialog from "./company-detail-info-dialog";
-import SectionLayout from "./section-layout";
+'use client';
+import { LinkIcon } from 'lucide-react';
+import { motion } from 'motion/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import CompanyDetailInfoDialog from './company-detail-info-dialog';
+import SectionLayout from './section-layout';
 
 type CareerItem = {
   name: string;
@@ -29,60 +29,60 @@ const itemVariants = {
 };
 
 export default function CareerSection() {
-  const t = useTranslations("Career");
+  const t = useTranslations('Career');
 
   const careers: CareerItem[] = [
     {
-      id: "coupang-play",
-      name: t("coupang-play.name"),
-      role: "Sr.Frontend Engineer",
-      period: "2025.10 - current",
-      description: t("coupang-play.description"),
-      links: [{ title: "Homepage", href: "https://www.coupangplay.com/" }],
-      thumbnail: "/images/company/coupang-play.jpg",
+      id: 'coupang-play',
+      name: t('coupang-play.name'),
+      role: 'Sr.Frontend Engineer',
+      period: '2025.01 - current',
+      description: t('coupang-play.description'),
+      links: [{ title: 'Homepage', href: 'https://www.coupangplay.com/' }],
+      thumbnail: '/images/company/coupang-play.jpg',
     },
     {
-      id: "gaudiolab",
-      name: t("gaudiolab.name"),
-      role: "Lead Frontend Engineer",
-      period: "2022.07 - 2025.09",
-      description: t("gaudiolab.description"),
+      id: 'gaudiolab',
+      name: t('gaudiolab.name'),
+      role: 'Lead Frontend Engineer',
+      period: '2022.07 - 2025.09',
+      description: t('gaudiolab.description'),
       links: [
-        { title: "Homepage", href: "https://www.gaudiolab.com/" },
+        { title: 'Homepage', href: 'https://www.gaudiolab.com/' },
         {
-          title: "Youtube",
-          href: "https://www.youtube.com/results?search_query=%EA%B0%80%EC%9A%B0%EB%94%94%EC%98%A4%EB%9E%A9",
+          title: 'Youtube',
+          href: 'https://www.youtube.com/results?search_query=%EA%B0%80%EC%9A%B0%EB%94%94%EC%98%A4%EB%9E%A9',
         },
       ],
-      thumbnail: "/images/company/gaudiolab.png",
+      thumbnail: '/images/company/gaudiolab.png',
     },
     {
-      id: "tmax",
-      name: t("tmax.name"),
-      role: "Research Engineer",
-      period: "2020.02 - 2022.06",
-      description: t("tmax.description"),
-      thumbnail: "/images/company/tmax.png",
-      links: [{ title: "Homepage", href: "https://www.tmaxsoft.com/" }],
+      id: 'tmax',
+      name: t('tmax.name'),
+      role: 'Research Engineer',
+      period: '2020.02 - 2022.06',
+      description: t('tmax.description'),
+      thumbnail: '/images/company/tmax.png',
+      links: [{ title: 'Homepage', href: 'https://www.tmaxsoft.com/' }],
     },
     {
-      id: "carchap",
-      name: t("carchap.name"),
-      role: "CTO & Co-founder",
-      period: "2018.12 - 2020.05",
-      description: t("carchap.description"),
+      id: 'carchap',
+      name: t('carchap.name'),
+      role: 'CTO & Co-founder',
+      period: '2018.12 - 2020.05',
+      description: t('carchap.description'),
       links: [
-        { title: "Homepage", href: "https://www.carchapapp.com/" },
+        { title: 'Homepage', href: 'https://www.carchapapp.com/' },
         {
-          title: "Youtube",
-          href: "https://www.youtube.com/results?search_query=%EC%B9%B4%EC%B0%B9",
+          title: 'Youtube',
+          href: 'https://www.youtube.com/results?search_query=%EC%B9%B4%EC%B0%B9',
         },
       ],
-      thumbnail: "/images/company/carchap.png",
+      thumbnail: '/images/company/carchap.png',
     },
   ];
   return (
-    <SectionLayout id="Career" title="Career" description={t("subtitle")}>
+    <SectionLayout id="Career" title="Career" description={t('subtitle')}>
       <div className="space-y-6">
         {careers.map((item, idx) => (
           <motion.div
@@ -121,7 +121,7 @@ export default function CareerSection() {
                 {item.role && (
                   <div className="text-sm text-muted-foreground">
                     {Array.isArray(item.role)
-                      ? item.role.join(" · ")
+                      ? item.role.join(' · ')
                       : item.role}
                   </div>
                 )}

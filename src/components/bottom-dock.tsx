@@ -104,13 +104,13 @@ export function BottomDock() {
                 >
                   CV-KO <FileDown />
                 </DropdownMenuItem>
-                <DropdownMenuItem
+                {/* <DropdownMenuItem
                   onClick={() => {
                     window.open('/resume/resume-en.pdf', '_blank');
                   }}
                 >
                   CV-EN <FileDown />
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
               </DropdownMenuContent>
             </DropdownMenu>
           </DockIcon>

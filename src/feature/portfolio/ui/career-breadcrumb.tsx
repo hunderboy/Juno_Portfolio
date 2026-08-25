@@ -1,34 +1,34 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+} from '@/components/ui/breadcrumb';
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import { LabeledSection } from "./labeled-section";
+} from '@/components/ui/hover-card';
+import { LabeledSection } from './labeled-section';
 
 export const CareerBreadcrumb = () => {
-  const t = useTranslations("hero");
+  const t = useTranslations('hero');
   return (
-    <LabeledSection label={t("careerPath.label")} className="w-full max-w-xs">
+    <LabeledSection label={t('careerPath.label')} className="w-full max-w-xs">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <HoverCard openDelay={0}>
-              <HoverCardTrigger>{t("carchap")}</HoverCardTrigger>
+              <HoverCardTrigger>{t('o2corn')}</HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <CareerInfo
-                  position="CTO & Co-founder"
+                  position="Android Mobile Developer"
                   period={{
-                    start: "2018.12",
-                    end: "2020.05",
+                    start: '2019.10',
+                    end: '2020.06',
                   }}
-                  team="Integrated Mobility"
+                  team="Mobile Team"
                 />
               </HoverCardContent>
             </HoverCard>
@@ -36,15 +36,15 @@ export const CareerBreadcrumb = () => {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <HoverCard openDelay={0}>
-              <HoverCardTrigger>{t("tmax")}</HoverCardTrigger>
+              <HoverCardTrigger>{t('everex')}</HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <CareerInfo
-                  position="Research Engineer"
+                  position="Lead Android & Flutter Mobile Developer"
                   period={{
-                    start: "2020.02",
-                    end: "2022.06",
+                    start: '2020.10',
+                    end: '2022.9',
                   }}
-                  team="Business Intelligence Platform"
+                  team="Domestic Mobile Team"
                 />
               </HoverCardContent>
             </HoverCard>
@@ -52,15 +52,15 @@ export const CareerBreadcrumb = () => {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <HoverCard openDelay={0}>
-              <HoverCardTrigger>{t("gaudiolab")}</HoverCardTrigger>
+              <HoverCardTrigger>{t('ournow')}</HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <CareerInfo
-                  position="Lead Frontend Engineer"
+                  position="Flutter Mobile Developer"
                   period={{
-                    start: "2022.07",
-                    end: "2025.09",
+                    start: '2023.01',
+                    end: '2023.05',
                   }}
-                  team="Service & AI"
+                  team="Mobile Team"
                 />
               </HoverCardContent>
             </HoverCard>
@@ -69,16 +69,16 @@ export const CareerBreadcrumb = () => {
           <BreadcrumbItem>
             <HoverCard openDelay={0}>
               <HoverCardTrigger className="space-x-2 text-primary">
-                {t("coupang-play")}
+                {t('quickarchive')}
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <CareerInfo
-                  position="Sr.Frontend Engineer"
+                  position="Lead Flutter Mobile Developer"
                   period={{
-                    start: "2025.10",
-                    end: "current",
+                    start: '2025.01',
+                    end: 'current',
                   }}
-                  team="CoupangPlay Monetization"
+                  team="Mobile Team"
                 />
               </HoverCardContent>
             </HoverCard>

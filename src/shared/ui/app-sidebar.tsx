@@ -128,8 +128,8 @@ export function AppSidebar() {
               <br />
             </>
           )}
-          copyright © {new Date().getFullYear()} Juno <br />
-          All rights reserved.
+          {/* copyright © {new Date().getFullYear()} Juno <br />
+          All rights reserved. */}
         </div>
       </SidebarFooter>
     </Sidebar>
