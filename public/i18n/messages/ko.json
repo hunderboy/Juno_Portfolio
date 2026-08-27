@@ -38,9 +38,9 @@
     },
     "philosophy": {
       "label": "개발철학",
-      "commandment1": "편리함을 추구하고 불편함을 제거한다",
+      "commandment1": "Simple is Best",
       "commandment2": "반복되면 자동화한다.",
-      "commandment3": "모든 변경사항에 대한 책임은 나에게 있다"
+      "commandment3": "Test, App Tracking 을 통한 안정성을 최우선으로 생각한다."
     },
     "techStack": {
       "card_label": "기술 스택"
