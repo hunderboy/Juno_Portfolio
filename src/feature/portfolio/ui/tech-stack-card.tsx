@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useTranslations } from "next-intl";
-import { StackChip } from "@/components/stack-chip";
-import { Card, CardContent } from "@/components/ui/card";
-import { LabeledSection } from "./labeled-section";
+import { useTranslations } from 'next-intl';
+import { StackChip } from '@/components/stack-chip';
+import { Card, CardContent } from '@/components/ui/card';
+import { LabeledSection } from './labeled-section';
 
 type StackGroup = {
   title: string;
@@ -13,32 +13,32 @@ type StackGroup = {
 
 const groups: StackGroup[] = [
   {
-    title: "Frontend",
-    chips: ["typescript", "javascript", "react", "next", "flutter", "dart"],
-    summary: "TS · JS · React · Next · Flutter · Dart",
+    title: 'Mobile',
+    chips: ['android', 'java', 'kotlin', 'flutter', 'dart'],
+    summary: 'Android · Java · Kotlin · Flutter · Dart',
   },
   {
-    title: "Backend / Infra",
-    chips: ["supabase", "docker", "aws", "argocd", "graphql"],
-    summary: "Supabase · Docker · AWS · ArgoCD · GraphQL",
+    title: 'Infra',
+    chips: ['firebase'],
+    summary: 'Firebase · App Distiribution · Crashlytics',
   },
   {
-    title: "Tooling & CI/CD",
-    chips: ["git", "github", "jest", "cypress", "circleci"],
-    summary: "Git · GitHub · Jest · Cypress · CircleCI",
+    title: 'Tooling & CI/CD',
+    chips: ['git', 'github', 'codemagic', 'github_actions'],
+    summary: 'Git · GitHub · Code Magic · Github Actions',
   },
   {
-    title: "Others",
-    chips: ["webassembly", "code", "windsurf"],
-    summary: "Web Audio API · AudioWorklet · WASM · Wavesurfer.js",
+    title: 'Others',
+    chips: ['ndk', 'ml_kit', 'exo_player'],
+    summary: 'NDK · ML kit · Exo Player(Video Player)',
   },
 ];
 
 export default function TechStackCard() {
-  const t = useTranslations("hero");
+  const t = useTranslations('hero');
 
   return (
-    <Card badgeTitle={t("techStack.card_label")} className="w-full ">
+    <Card badgeTitle={t('techStack.card_label')} className="w-full ">
       <CardContent className="space-y-5 pt-2">
         {groups.map(({ title, chips, summary }) => (
           <LabeledSection key={title} label={title}>
