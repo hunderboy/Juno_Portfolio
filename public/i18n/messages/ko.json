@@ -47,22 +47,26 @@
     }
   },
   "Career": {
-    "subtitle": "편리함을 찾고, 불편함을 제거하는 제품을 만듭니다.",
-    "coupang-play": {
-      "name": "쿠팡플레이",
-      "description": "Monetization 팀, OTT 결제·구독·수익화 웹/앱 프론트엔드"
+    "subtitle": "사람들에게 '기쁨'을 주는 서비스를 만듭니다.",
+    "quick-archive": {
+      "name": "퀵카이브",
+      "description": "퀵링크 저장 서비스 공동 창업. Mobile(Flutter) 팀 리드"
     },
-    "gaudiolab": {
-      "name": "가우디오랩",
-      "description": "Gaudio Studio 등 오디오 웹 제품 프론트엔드 리드"
+    "coaching": {
+      "name": "개발 코칭 활동",
+      "description": "Flutter 대면 개발 코칭. 개발부터 배포까지 코칭. 🎉 4명 모두 취업 🎉"
     },
-    "tmax": {
-      "name": "티맥스티베로",
-      "description": "HyperData 추천·분석·데이터 시각화 플랫폼 개발"
+    "ournow": {
+      "name": "우리의 지금",
+      "description": "운동강사의 개인 커리큘럼 커스텀 기능, 수업 예약기능 개발"
     },
-    "carchap": {
-      "name": "카찹",
-      "description": "모빌리티 앱 공동 창업, Android/iOS 개발 및 팀 운영"
+    "everex": {
+      "name": "에버엑스",
+      "description": "MORA(Flutter), KneeEX(Android) 근골격계 디지털 치료제 서비스 앱개발 리드"
+    },
+    "o2corn": {
+      "name": "오투콘 홀딩스",
+      "description": "식당예약 서비스 : 예약엔 토스트(Android) 개발"
     },
     "detail": {
       "description": "공개된 범위 내에서 작업의 결과물입니다."
