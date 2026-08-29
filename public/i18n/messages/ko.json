@@ -62,7 +62,7 @@
     },
     "everex": {
       "name": "에버엑스",
-      "description": "MORA(Flutter), KneeEX(Android) 근골격계 디지털 치료제 서비스 앱개발 리드"
+      "description": "MORA Ex(Flutter), KneeEX(Android) 근골격계 디지털 치료제 서비스 앱개발 리드"
     },
     "o2corn": {
       "name": "오투콘 홀딩스",
@@ -73,26 +73,26 @@
     }
   },
   "Project": {
-    "subtitle": "신기술 + 좋은 옛기술을 통해 프로젝트를 만들어갑니다.",
-    "portfolio-site": {
-      "name": "개인 포트폴리오 사이트",
-      "description": "Next.js + shadcn/ui 기반의 다국어 포트폴리오 사이트."
+    "subtitle": "과거를 통해 미래로 이어나가는 프로젝트를 만듭니다.",
+    "quick_archive": {
+      "name": "퀵카이브",
+      "description": "나중에 볼 컨텐츠나 Keep 해두고 싶은 컨텐츠를 쉽고 빠르게 저장하는 서비스"
     },
-    "chulgang25": {
-      "name": "출강이오",
-      "description": "기업·기관과 출강 업체를 연결하는 플랫폼."
+    "ournow": {
+      "name": "Ournow",
+      "description": "운동 식단 기록 및 운동 예약 서비스 Ournow(Flutter) v2.0"
     },
-    "travel-erp": {
-      "name": "여행사 ERP+CRM",
-      "description": "MS Access 기반 시스템의 웹 마이그레이션 + 예약 사이트 제공"
+    "mora": {
+      "name": "MORA Ex",
+      "description": "디지털 헬스케어 재활 모바일 서비스"
     },
-    "golf-lesson-platform": {
-      "name": "골프 레슨 플랫폼",
-      "description": "골프 레슨 서비스 및 회원관리 플랫폼."
+    "knee_ex": {
+      "name": "KneeEX",
+      "description": "디지털 치료제 DTX 환자 재활 Android App"
     },
-    "dr-folio": {
-      "name": "금융 포트폴리오 플랫폼",
-      "description": "금융공학 모델 + AI를 이용한 최고의 포트폴리오 생성·추천 서비스."
+    "reservation_toast": {
+      "name": "예약엔 토스트",
+      "description": "회식을 위한 식당예약 서비스"
     }
   },
   "Activity": {
