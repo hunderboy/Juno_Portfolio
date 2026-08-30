@@ -1,0 +1,11 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- blue arrow: top-left -> diagonal down -> bottom-right arrowhead -->
+  <path d="M22 62 L100 62 L232 182 L258 182"
+        stroke="#4F86F7" stroke-width="36" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+  <path d="M248 158 L248 206 L296 182 Z" fill="#4F86F7"/>
+
+  <!-- green arrow: bottom-left -> diagonal up -> top-right arrowhead (drawn on top at the crossing) -->
+  <path d="M22 182 L100 182 L232 62 L258 62"
+        stroke="#78D28A" stroke-width="36" stroke-linecap="butt" stroke-linejoin="miter" fill="none"/>
+  <path d="M248 38 L248 86 L296 62 Z" fill="#78D28A"/>
+</svg>
