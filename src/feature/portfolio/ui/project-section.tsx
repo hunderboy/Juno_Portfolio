@@ -53,8 +53,8 @@ export default function ProjectSection() {
       id: 'quick_archive',
       title: t('quick_archive.name'),
       description: t('quick_archive.description'),
-      thumbnail: '/images/project/포트폴리오_웹.gif',
-      link: 'https://github.com/your-username/your-repo',
+      thumbnail: '/images/project/퀵카이브_프로젝트_이미지.png',
+      link: 'https://quickarchive.co.kr',
       stacks: [
         'Flutter',
         'riverpod',
@@ -68,15 +68,16 @@ export default function ProjectSection() {
       id: 'ournow',
       title: t('ournow.name'),
       description: t('ournow.description'),
-      thumbnail: '/images/project/출강이오.gif',
-      link: 'https://www.chulgang25.com/',
+      thumbnail: '/images/project/Ournow_프로젝트_이미지.jpg',
+      link: 'https://blog.naver.com/ournow/223158626426',
       stacks: ['Flutter', 'getx', 'firebase', 'Github'],
     },
     {
       id: 'mora',
       title: t('mora.name'),
       description: t('mora.description'),
-      thumbnail: '/images/project/그린빈즈_31.gif',
+      link: 'https://www.youtube.com/playlist?list=PLKxJhj-PIQUs',
+      thumbnail: '/images/project/mora_15second.gif',
       stacks: [
         'Flutter',
         'getx',
@@ -90,7 +91,7 @@ export default function ProjectSection() {
       id: 'knee_ex',
       title: t('knee_ex.name'),
       description: t('knee_ex.description'),
-      thumbnail: '/images/project/라운드인_앱.gif',
+      thumbnail: '/images/project/knee_ex.webp',
       stacks: [
         'Android',
         'Kotlin',
@@ -105,9 +106,9 @@ export default function ProjectSection() {
       id: 'reservation_toast',
       title: t('reservation_toast.name'),
       description: t('reservation_toast.description'),
-      thumbnail: '/images/project/티맥스_웹.gif',
+      thumbnail: '/images/project/예약엔_토스트_이미지.png',
       stacks: ['Android', 'Java', 'Nodejs', 'Github'],
-      link: 'https://reservation_toast.github.io/',
+      link: 'https://www.youtube.com/watch?v=mnMv9qHsVMc',
     },
   ];
 
