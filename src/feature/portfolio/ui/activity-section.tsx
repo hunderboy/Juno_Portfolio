@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Clapperboard,
@@ -6,17 +6,17 @@ import {
   GitBranch,
   Link as LinkIcon,
   Rss,
-} from "lucide-react";
-import { motion } from "motion/react";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+} from 'lucide-react';
+import { motion } from 'motion/react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import SectionLayout from "./section-layout";
+} from '@/components/ui/accordion';
+import SectionLayout from './section-layout';
 
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -28,64 +28,64 @@ const itemVariants = {
 };
 
 export default function ActivitySection() {
-  const t = useTranslations("Activity");
-  const openSource = [
-    {
-      title: "wavesurfer.js",
-      desc: t("opensource.wavesurfer"),
-      href: "https://github.com/katspaugh/wavesurfer.js",
-    },
-    {
-      title: "handy-snippets",
-      desc: t("opensource.handy-snippets"),
-      href: "https://github.com/your-username/your-repo",
-    },
-  ];
+  const t = useTranslations('Activity');
+  // const openSource = [
+  //   {
+  //     title: 'wavesurfer.js',
+  //     desc: t('opensource.wavesurfer'),
+  //     href: 'https://github.com/katspaugh/wavesurfer.js',
+  //   },
+  //   {
+  //     title: 'handy-snippets',
+  //     desc: t('opensource.handy-snippets'),
+  //     href: 'https://github.com/your-username/your-repo',
+  //   },
+  // ];
 
-  const publications = [
+  const studentprojects = [
     {
-      title: t("publication.graduation-paper.title"),
-      desc: t("publication.graduation-paper.desc"),
-      href: "https://example.com/publication",
+      title: t('studentproject.step-1.title'),
+      desc: t('studentproject.step-1.desc'),
+      href: 'https://kindhearted-layer-487.notion.site/Medium-1df391bd206741b98f3c93596939284d',
     },
     {
-      title: t("publication.book.title"),
-      desc: t("publication.book.desc"),
-      href: "https://example.com/book",
+      title: t('studentproject.step-2.title'),
+      desc: t('studentproject.step-2.desc'),
+      href: 'https://kindhearted-layer-487.notion.site/Kick-Off-48e71b313d194d34992a3822bb1ca03d',
     },
   ];
 
   const lectures = [
     {
-      title: t("lecture.title"),
-      desc: t("lecture.desc"),
-      href: "https://www.youtube.com/watch?v=-UqdwtSixzA",
+      title: t('lecture.title'),
+      desc: t('lecture.desc'),
+      href: 'https://www.youtube.com/watch?v=-UqdwtSixzA',
     },
   ];
 
   const blogs = [
     {
-      title: "Tistory",
-      desc: t("blog.description"),
-      href: "https://example.com/blog",
+      title: 'Tistory',
+      desc: t('blog.description'),
+      href: 'https://hunderboy-ultra90.tistory.com/',
     },
   ];
 
   return (
-    <SectionLayout id="Activity" title="Activity" description={t("subtitle")}>
+    <SectionLayout id="Activity" title="Activity" description={t('subtitle')}>
       <motion.div variants={itemVariants}>
         <Accordion
           className="w-full"
-          defaultValue={["opensource", "publication"]}
+          defaultValue={['opensource', 'studentwork']}
           type="multiple"
         >
-          <AccordionItem value="opensource">
+          {/* <AccordionItem value="opensource">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
                   <GitBranch className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t("group.opensource")}
+                    {t('group.opensource')}
                   </div>
                 </div>
               </div>
@@ -118,22 +118,22 @@ export default function ActivitySection() {
                 ))}
               </ul>
             </AccordionContent>
-          </AccordionItem>
+          </AccordionItem> */}
 
-          <AccordionItem value="publication">
+          <AccordionItem value="studentproject">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
                   <FileText className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t("group.publication")}
+                    {t('group.studentproject')}
                   </div>
                 </div>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4">
               <ul className="list-disc pl-4 space-y-2">
-                {publications.map((it) => (
+                {studentprojects.map((it) => (
                   <li
                     key={it.title}
                     className="flex items-center gap-2 text-sm"
@@ -160,13 +160,14 @@ export default function ActivitySection() {
               </ul>
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="lecture">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Clapperboard className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t("group.lecture")}
+                    {t('group.lecture')}
                   </div>
                 </div>
               </div>
@@ -200,13 +201,14 @@ export default function ActivitySection() {
               </ul>
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="blog">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Rss className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t("group.blog")}
+                    {t('group.blog')}
                   </div>
                 </div>
               </div>
@@ -239,8 +241,8 @@ export default function ActivitySection() {
                 ))}
               </ul>
               <iframe
-                title={t("blog.iframeTitle")}
-                src="https://example.com/blog"
+                title={t('blog.iframeTitle')}
+                src="https://hunderboy-ultra90.tistory.com/"
                 className="w-full min-h-[400px] rounded-md border"
               />
             </AccordionContent>
