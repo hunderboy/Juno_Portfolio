@@ -53,7 +53,7 @@
       "description": "퀵링크 저장 서비스 공동 창업. Mobile(Flutter) 팀 리드"
     },
     "coaching": {
-      "name": "개발 코칭 활동",
+      "name": "개발 코칭 활동(부산)",
       "description": "Flutter 대면 개발 코칭. 개발부터 배포까지 코칭. 🎉 4명 모두 취업 🎉"
     },
     "ournow": {
@@ -107,11 +107,11 @@
     "studentproject": {
       "step-1": {
         "title": "모임 플랫폼 (Android)",
-        "desc": "1단계"
+        "desc": "Medium"
       },
       "step-2": {
         "title": "스포츠 스트리밍 플랫폼 (Android)",
-        "desc": "2단계"
+        "desc": "Kick-off"
       }
     },
     "lecture": {
