@@ -34,7 +34,7 @@ export const NAV_ITEMS = [
   { title: 'Career', url: '#Career', icon: Briefcase },
   { title: 'Project', url: '#Project', icon: FolderKanban },
   { title: 'Activity', url: '#Activity', icon: Wrench },
-  { title: 'Achievements', url: '#Achievements', icon: Trophy },
+  // { title: 'Achievements', url: '#Achievements', icon: Trophy },
   { title: 'Experience', url: '#Experience', icon: History },
 ] as const;
 

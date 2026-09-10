@@ -17,7 +17,7 @@ export default function Home() {
         <CareerSection />
         <ProjectSection />
         <ActivitySection />
-        <AchievementsSection />
+        {/* <AchievementsSection /> */}
         <ExperienceSection />
       </div>
     </>

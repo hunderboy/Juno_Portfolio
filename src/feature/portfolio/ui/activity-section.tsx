@@ -59,7 +59,7 @@ export default function ActivitySection() {
     {
       title: t('lecture.title'),
       desc: t('lecture.desc'),
-      href: 'https://www.youtube.com/watch?v=-UqdwtSixzA',
+      href: 'https://kindhearted-layer-487.notion.site/Fundermental-3d08f3fa3b9280bcb00dcd247be571aa',
     },
   ];
 
