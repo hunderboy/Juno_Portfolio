@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion, useReducedMotion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { motion, useReducedMotion } from 'motion/react';
+import { useTranslations } from 'next-intl';
 import {
   Card,
   CardBadge,
@@ -9,16 +9,16 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { cn } from "@/lib/utils";
-import SectionLayout from "./section-layout";
+} from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
+import SectionLayout from './section-layout';
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
@@ -82,7 +82,7 @@ function Item({ item }: { item: ExperienceItem }) {
 }
 
 export default function ExperienceSection() {
-  const t = useTranslations("Experience");
+  const t = useTranslations('Experience');
   const prefersReducedMotion = useReducedMotion();
 
   const DATA: ExperienceYear[] = [
@@ -90,23 +90,23 @@ export default function ExperienceSection() {
       year: 2026,
       items: [
         {
-          quarter: "2Q",
-          title: t("2026.2Q.title"),
-          details: t("2026.2Q.details"),
+          quarter: '2Q',
+          title: t('2026.2Q.title'),
+          details: t('2026.2Q.details'),
           extra: [
-            t("2026.2Q.extra1"),
-            t("2026.2Q.extra2"),
-            t("2026.2Q.extra3"),
+            t('2026.2Q.extra1'),
+            t('2026.2Q.extra2'),
+            t('2026.2Q.extra3'),
           ],
         },
         {
-          quarter: "1Q",
-          title: t("2026.1Q.title"),
-          details: t("2026.1Q.details"),
+          quarter: '1Q',
+          title: t('2026.1Q.title'),
+          details: t('2026.1Q.details'),
           extra: [
-            t("2026.1Q.extra1"),
-            t("2026.1Q.extra2"),
-            t("2026.1Q.extra3"),
+            t('2026.1Q.extra1'),
+            t('2026.1Q.extra2'),
+            t('2026.1Q.extra3'),
           ],
         },
       ],
@@ -115,40 +115,40 @@ export default function ExperienceSection() {
       year: 2025,
       items: [
         {
-          quarter: "4Q",
-          title: t("2025.4Q.title"),
-          details: t("2025.4Q.details"),
+          quarter: '4Q',
+          title: t('2025.4Q.title'),
+          details: t('2025.4Q.details'),
           extra: [
-            t("2025.4Q.extra1"),
-            t("2025.4Q.extra2"),
-            t("2025.4Q.extra3"),
+            t('2025.4Q.extra1'),
+            t('2025.4Q.extra2'),
+            t('2025.4Q.extra3'),
           ],
         },
         {
-          quarter: "3Q",
-          title: t("2025.3Q.title"),
-          details: t("2025.3Q.details"),
+          quarter: '3Q',
+          title: t('2025.3Q.title'),
+          details: t('2025.3Q.details'),
           extra: [
-            t("2025.3Q.extra1"),
-            t("2025.3Q.extra2"),
-            t("2025.3Q.extra3"),
+            t('2025.3Q.extra1'),
+            t('2025.3Q.extra2'),
+            t('2025.3Q.extra3'),
           ],
         },
         {
-          quarter: "2Q",
-          title: t("2025.2Q.title"),
-          details: t("2025.2Q.details"),
+          quarter: '2Q',
+          title: t('2025.2Q.title'),
+          details: t('2025.2Q.details'),
           extra: [
-            t("2025.2Q.extra1"),
-            t("2025.2Q.extra2"),
-            t("2025.2Q.extra3"),
+            t('2025.2Q.extra1'),
+            t('2025.2Q.extra2'),
+            t('2025.2Q.extra3'),
           ],
         },
         {
-          quarter: "1Q",
-          title: t("2025.1Q.title"),
-          details: t("2025.1Q.details"),
-          extra: [t("2025.1Q.extra1")],
+          quarter: '1Q',
+          title: t('2025.1Q.title'),
+          details: t('2025.1Q.details'),
+          extra: [t('2025.1Q.extra1')],
         },
       ],
     },
@@ -156,43 +156,43 @@ export default function ExperienceSection() {
       year: 2024,
       items: [
         {
-          quarter: "4Q",
-          title: t("2024.4Q.title"),
-          details: t("2024.4Q.details"),
+          quarter: '4Q',
+          title: t('2024.4Q.title'),
+          details: t('2024.4Q.details'),
           extra: [
-            t("2024.4Q.extra1"),
-            t("2024.4Q.extra2"),
-            t("2024.4Q.extra3"),
+            t('2024.4Q.extra1'),
+            t('2024.4Q.extra2'),
+            t('2024.4Q.extra3'),
           ],
         },
         {
-          quarter: "3Q",
-          title: t("2024.3Q.title"),
-          details: t("2024.3Q.details"),
+          quarter: '3Q',
+          title: t('2024.3Q.title'),
+          details: t('2024.3Q.details'),
           extra: [
-            t("2024.3Q.extra1"),
-            t("2024.3Q.extra2"),
-            t("2024.3Q.extra3"),
+            t('2024.3Q.extra1'),
+            t('2024.3Q.extra2'),
+            t('2024.3Q.extra3'),
           ],
         },
         {
-          quarter: "2Q",
-          title: t("2024.2Q.title"),
-          details: t("2024.2Q.details"),
+          quarter: '2Q',
+          title: t('2024.2Q.title'),
+          details: t('2024.2Q.details'),
           extra: [
-            t("2024.2Q.extra1"),
-            t("2024.2Q.extra2"),
-            t("2024.2Q.extra3"),
+            t('2024.2Q.extra1'),
+            t('2024.2Q.extra2'),
+            t('2024.2Q.extra3'),
           ],
         },
         {
-          quarter: "1Q",
-          title: t("2024.1Q.title"),
-          details: t("2024.1Q.details"),
+          quarter: '1Q',
+          title: t('2024.1Q.title'),
+          details: t('2024.1Q.details'),
           extra: [
-            t("2024.1Q.extra1"),
-            t("2024.1Q.extra2"),
-            t("2024.1Q.extra3"),
+            t('2024.1Q.extra1'),
+            t('2024.1Q.extra2'),
+            t('2024.1Q.extra3'),
           ],
         },
       ],
@@ -201,35 +201,35 @@ export default function ExperienceSection() {
       year: 2023,
       items: [
         {
-          quarter: "4Q",
-          title: t("2023.4Q.title"),
-          details: t("2023.4Q.details"),
-          extra: [t("2023.4Q.extra1"), t("2023.4Q.extra2")],
+          quarter: '4Q',
+          title: t('2023.4Q.title'),
+          details: t('2023.4Q.details'),
+          extra: [t('2023.4Q.extra1'), t('2023.4Q.extra2')],
         },
         {
-          quarter: "3Q",
-          title: t("2023.3Q.title"),
-          details: t("2023.3Q.details"),
+          quarter: '3Q',
+          title: t('2023.3Q.title'),
+          details: t('2023.3Q.details'),
           extra: [
-            t("2023.3Q.extra1"),
-            t("2023.3Q.extra2"),
-            t("2023.3Q.extra3"),
+            t('2023.3Q.extra1'),
+            t('2023.3Q.extra2'),
+            t('2023.3Q.extra3'),
           ],
         },
         {
-          quarter: "2Q",
-          title: t("2023.2Q.title"),
-          details: t("2023.2Q.details"),
-          extra: [t("2023.2Q.extra1"), t("2023.2Q.extra2")],
+          quarter: '2Q',
+          title: t('2023.2Q.title'),
+          details: t('2023.2Q.details'),
+          extra: [t('2023.2Q.extra1'), t('2023.2Q.extra2')],
         },
         {
-          quarter: "1Q",
-          title: t("2023.1Q.title"),
-          details: t("2023.1Q.details"),
+          quarter: '1Q',
+          title: t('2023.1Q.title'),
+          details: t('2023.1Q.details'),
           extra: [
-            t("2023.1Q.extra1"),
-            t("2023.1Q.extra2"),
-            t("2023.1Q.extra3"),
+            t('2023.1Q.extra1'),
+            t('2023.1Q.extra2'),
+            t('2023.1Q.extra3'),
           ],
         },
       ],
@@ -238,28 +238,32 @@ export default function ExperienceSection() {
       year: 2022,
       items: [
         {
-          quarter: "4Q",
-          title: t("2022.4Q.title"),
-          details: t("2022.4Q.details"),
-          extra: [t("2022.4Q.extra1"), t("2022.4Q.extra2")],
+          quarter: '4Q',
+          title: t('2022.4Q.title'),
+          details: t('2022.4Q.details'),
+          extra: [
+            t('2022.4Q.extra1'),
+            t('2022.4Q.extra2'),
+            t('2022.4Q.extra3'),
+          ],
         },
         {
-          quarter: "3Q",
-          title: t("2022.3Q.title"),
-          details: t("2022.3Q.details"),
-          extra: [t("2022.3Q.extra1"), t("2022.3Q.extra2")],
+          quarter: '3Q',
+          title: t('2022.3Q.title'),
+          details: t('2022.3Q.details'),
+          extra: [t('2022.3Q.extra1'), t('2022.3Q.extra2')],
         },
         {
-          quarter: "2Q",
-          title: t("2022.2Q.title"),
-          details: t("2022.2Q.details"),
-          extra: [t("2022.2Q.extra1"), t("2022.2Q.extra2")],
+          quarter: '2Q',
+          title: t('2022.2Q.title'),
+          details: t('2022.2Q.details'),
+          extra: [t('2022.2Q.extra1'), t('2022.2Q.extra2')],
         },
         {
-          quarter: "1Q",
-          title: t("2022.1Q.title"),
-          details: t("2022.1Q.details"),
-          extra: [t("2022.1Q.extra1"), t("2022.1Q.extra2")],
+          quarter: '1Q',
+          title: t('2022.1Q.title'),
+          details: t('2022.1Q.details'),
+          extra: [t('2022.1Q.extra1'), t('2022.1Q.extra2')],
         },
       ],
     },
@@ -269,7 +273,7 @@ export default function ExperienceSection() {
     <SectionLayout
       id="Experience"
       title="Experience"
-      description={t("subtitle")}
+      description={t('subtitle')}
       fullWidth
     >
       <div className="flex w-full flex-col gap-12 md:gap-14">
@@ -280,8 +284,8 @@ export default function ExperienceSection() {
             aria-labelledby={`experience-year-${year.year}`}
             className="space-y-5 md:space-y-6"
             variants={yearListVariants}
-            initial={prefersReducedMotion ? false : "hidden"}
-            whileInView={prefersReducedMotion ? undefined : "show"}
+            initial={prefersReducedMotion ? false : 'hidden'}
+            whileInView={prefersReducedMotion ? undefined : 'show'}
             viewport={{ once: true, amount: 0.12 }}
           >
             <motion.div variants={blockVariants}>
@@ -295,10 +299,10 @@ export default function ExperienceSection() {
 
             <motion.div
               variants={blockVariants}
-              className={cn("relative w-full px-4 md:px-14")}
+              className={cn('relative w-full px-4 md:px-14')}
             >
               <Carousel
-                opts={{ align: "start", slidesToScroll: 1 }}
+                opts={{ align: 'start', slidesToScroll: 1 }}
                 className="w-full"
                 aria-label={`${year.year} experience quarters`}
               >
@@ -308,8 +312,8 @@ export default function ExperienceSection() {
                       key={`${year.year}-${it.quarter}`}
                       className={
                         year.items.length === 1
-                          ? "basis-full max-w-3xl"
-                          : "basis-[min(100%,22rem)] sm:basis-[72%] md:basis-1/2 lg:basis-[46%] xl:basis-[40%]"
+                          ? 'basis-full max-w-3xl'
+                          : 'basis-[min(100%,22rem)] sm:basis-[72%] md:basis-1/2 lg:basis-[46%] xl:basis-[40%]'
                       }
                     >
                       <Item item={it} />
