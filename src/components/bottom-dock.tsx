@@ -99,7 +99,7 @@ export function BottomDock() {
               <DropdownMenuContent>
                 <DropdownMenuItem
                   onClick={() => {
-                    window.open('/resume/resume-ko.pdf', '_blank');
+                    window.open('/resume/resume-juno-ko.pdf', '_blank');
                   }}
                 >
                   CV-KO <FileDown />

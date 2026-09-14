@@ -148,7 +148,11 @@ export default function ExperienceSection() {
           quarter: '1Q',
           title: t('2025.1Q.title'),
           details: t('2025.1Q.details'),
-          extra: [t('2025.1Q.extra1')],
+          extra: [
+            t('2025.1Q.extra1'),
+            t('2025.1Q.extra2'),
+            t('2025.1Q.extra3'),
+          ],
         },
       ],
     },
@@ -204,7 +208,11 @@ export default function ExperienceSection() {
           quarter: '4Q',
           title: t('2023.4Q.title'),
           details: t('2023.4Q.details'),
-          extra: [t('2023.4Q.extra1'), t('2023.4Q.extra2')],
+          extra: [
+            t('2023.4Q.extra1'),
+            t('2023.4Q.extra2'),
+            t('2023.4Q.extra3'),
+          ],
         },
         {
           quarter: '3Q',
