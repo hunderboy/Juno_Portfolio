@@ -1,32 +1,32 @@
-"use client";
+'use client';
 
-import { BadgeCheck, Image as ImageIcon, Trophy } from "lucide-react";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { BadgeCheck, Image as ImageIcon, Trophy } from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import SectionLayout from "./section-layout";
+} from '@/components/ui/dialog';
+import SectionLayout from './section-layout';
 
 export default function AchievementsSection() {
-  const t = useTranslations("Achievements");
+  const t = useTranslations('Achievements');
   const awards: Array<{
     year: string;
     entries: Array<{
@@ -37,57 +37,57 @@ export default function AchievementsSection() {
     }>;
   }> = [
     {
-      year: "2023",
+      year: '2023',
       entries: [
         {
-          name: "가우디오랩",
-          grade: "PIETTIC 중 Integrity 수상",
-          details: "신뢰도 높은 협업, 높은 수준의 업무수행으로 인한 수상",
+          name: '가우디오랩',
+          grade: 'PIETTIC 중 Integrity 수상',
+          details: '신뢰도 높은 협업, 높은 수준의 업무수행으로 인한 수상',
         },
       ],
     },
     {
-      year: "2021",
+      year: '2021',
       entries: [
         {
-          name: "티맥스 표창장",
-          grade: "우수사원상",
-          details: "시각화·통계 플랫폼 관련 공로",
-          images: ["tmaxAward2021.jpg"],
+          name: '티맥스 표창장',
+          grade: '우수사원상',
+          details: '시각화·통계 플랫폼 관련 공로',
+          images: ['tmaxAward2021.jpg'],
         },
         {
-          name: "우리은행 온택트 공모전",
-          grade: "우수상",
-          details: "DR.폴리오: 금융공학 모델 + AI 기반 포트폴리오 생성·추천",
-          images: ["wooribangAward.jpeg"],
+          name: '우리은행 온택트 공모전',
+          grade: '우수상',
+          details: 'DR.폴리오: 금융공학 모델 + AI 기반 포트폴리오 생성·추천',
+          images: ['wooribangAward.jpeg'],
         },
       ],
     },
     {
-      year: "2019",
+      year: '2019',
       entries: [
         {
-          name: "청년 스타트업 어워즈, 경기도 대학생 융합 창업지원 공모전, 흑석캠퍼스타운 창업경진대회, 스마트시티즌 챌린지 외",
-          grade: "대상, S등급, 대상, 최우수상 외",
-          details: "카찹: 통합 모빌리티 플랫폼",
+          name: '청년 스타트업 어워즈, 경기도 대학생 융합 창업지원 공모전, 흑석캠퍼스타운 창업경진대회, 스마트시티즌 챌린지 외',
+          grade: '대상, S등급, 대상, 최우수상 외',
+          details: '카찹: 통합 모빌리티 플랫폼',
           images: [
-            "startupAward.jpg",
-            "gyeonggiAward.jpeg",
-            "campusTownAward.jpg",
-            "smartCitizenAward.jpeg",
-            "STU_Award.png",
+            'startupAward.jpg',
+            'gyeonggiAward.jpeg',
+            'campusTownAward.jpg',
+            'smartCitizenAward.jpeg',
+            'STU_Award.png',
           ],
         },
       ],
     },
     {
-      year: "2018",
+      year: '2018',
       entries: [
         {
-          name: "한국통신학회 추계종합학술발표회",
-          grade: "우수논문상",
-          details: "[UC-LAB] GAN + DNN 기반 Anomaly Detection 연구",
-          images: ["bestPaper2018.jpg", "poster.jpg"],
+          name: '한국통신학회 추계종합학술발표회',
+          grade: '우수논문상',
+          details: '[UC-LAB] GAN + DNN 기반 Anomaly Detection 연구',
+          images: ['bestPaper2018.jpg', 'poster.jpg'],
         },
       ],
     },
@@ -98,20 +98,20 @@ export default function AchievementsSection() {
     images?: string[];
   }> = [
     {
-      title: "정보처리기사 & 산업기사",
+      title: '정보처리기사 & 산업기사',
 
       images: [
-        "InformationProcessingEngineer.png",
-        "InformationProcessingIndustryEngineer.png",
+        'InformationProcessingEngineer.png',
+        'InformationProcessingIndustryEngineer.png',
       ],
     },
     {
-      title: "정보기기운용기능사",
-      images: ["InformationEquipmentManagementTechnician.png"],
+      title: '정보기기운용기능사',
+      images: ['InformationEquipmentManagementTechnician.png'],
     },
     {
-      title: "SQLD, ADSP",
-      images: ["sqld.png", "adsp.png"],
+      title: 'SQLD, ADSP',
+      images: ['sqld.png', 'adsp.png'],
     },
   ];
 
@@ -119,9 +119,9 @@ export default function AchievementsSection() {
     <SectionLayout
       id="Achievements"
       title="Achievements"
-      description={t("subtitle")}
+      description={t('subtitle')}
     >
-      <Accordion className="w-full" defaultValue={["awards"]} type="multiple">
+      <Accordion className="w-full" defaultValue={['awards']} type="multiple">
         <AccordionItem value="awards">
           <AccordionTrigger>
             <div className="flex w-full items-center justify-between">
