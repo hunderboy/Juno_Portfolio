@@ -120,20 +120,20 @@ export default function ActivitySection() {
             </AccordionContent>
           </AccordionItem> */}
 
-          <AccordionItem value="studentproject">
+          <AccordionItem value="lecture">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <FileText className="size-4 text-muted-foreground" />
+                  <Clapperboard className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t('group.studentproject')}
+                    {t('group.lecture')}
                   </div>
                 </div>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4">
               <ul className="list-disc pl-4 space-y-2">
-                {studentprojects.map((it) => (
+                {lectures.map((it) => (
                   <li
                     key={it.title}
                     className="flex items-center gap-2 text-sm"
@@ -161,20 +161,20 @@ export default function ActivitySection() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="lecture">
+          <AccordionItem value="studentproject">
             <AccordionTrigger>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <Clapperboard className="size-4 text-muted-foreground" />
+                  <FileText className="size-4 text-muted-foreground" />
                   <div className="text-left font-semibold text-base">
-                    {t('group.lecture')}
+                    {t('group.studentproject')}
                   </div>
                 </div>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4">
               <ul className="list-disc pl-4 space-y-2">
-                {lectures.map((it) => (
+                {studentprojects.map((it) => (
                   <li
                     key={it.title}
                     className="flex items-center gap-2 text-sm"

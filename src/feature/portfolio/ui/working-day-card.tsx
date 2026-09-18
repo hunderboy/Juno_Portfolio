@@ -15,11 +15,11 @@ export default function WorkingDayCard() {
         <p className="m-0 text-base font-semibold">
           {t('experience.title', { years: N년차 })}
         </p>
-        <p className="m-0 mt-1 text-sm text-muted-foreground">
+        <div className="m-0 mt-1 text-sm text-muted-foreground">
           <TextAnimate animation="slideUp" by="word" repeat duration={3}>
             {t('experience.workdays', { days: lastCompanyPlayDays })}
           </TextAnimate>
-        </p>
+        </div>
       </div>
     </LabeledSection>
   );

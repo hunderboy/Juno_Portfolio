@@ -80,8 +80,8 @@ export function BottomDock() {
 
           <DockIcon>
             <DropdownMenu>
-              <DropdownMenuTrigger>
-                <SimpleTooltip content="Resume">
+              <SimpleTooltip content="Resume">
+                <DropdownMenuTrigger asChild>
                   <Button
                     size="icon-sm"
                     variant="ghost"
@@ -94,8 +94,8 @@ export function BottomDock() {
                   >
                     <FileUser className="size-5" />
                   </Button>
-                </SimpleTooltip>
-              </DropdownMenuTrigger>
+                </DropdownMenuTrigger>
+              </SimpleTooltip>
               <DropdownMenuContent>
                 <DropdownMenuItem
                   onClick={() => {

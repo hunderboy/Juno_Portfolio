@@ -47,7 +47,12 @@ export default function CareerSection() {
       role: 'Flutter Technical Mentor',
       period: '2023.09 - 2024.11',
       description: t('coaching.description'),
-      // links: [{ title: 'Homepage', href: 'https://quickarchive.co.kr' }],
+      links: [
+        {
+          title: 'Homepage',
+          href: 'https://kindhearted-layer-487.notion.site/Fundermental-3d08f3fa3b9280bcb00dcd247be571aa',
+        },
+      ],
       thumbnail: '/images/company/coaching_logo.png',
     },
     {
