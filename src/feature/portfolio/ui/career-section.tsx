@@ -82,7 +82,7 @@ export default function CareerSection() {
       id: 'o2corn',
       name: t('o2corn.name'),
       role: 'Android Developer',
-      period: '2018.12 - 2020.05',
+      period: '2019.10 - 2020.05',
       description: t('o2corn.description'),
       links: [
         {
